@@ -1,1 +1,1 @@
-web: node server.js
+wceb: node server.js
