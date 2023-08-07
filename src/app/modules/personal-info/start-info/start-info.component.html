@@ -1,11 +1,11 @@
 <section id="start" class="start">
     <div class="container">
-        <h1 class="start-title load-hidden">
+        <h1 class="start-title load-hidden" [ngsReveal]="getConfig('start-title')">
             Hi, my name is <span class="text-color-main">Rubén Martínez</span>
             <br/>
             I'm FrontEnd Developer.
         </h1>
-        <p class="start-cta load-hidden">
+        <p class="start-cta load-hidden" [ngsReveal]="getConfig('start-cta')">
             <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about"
             >Know more</a
             >

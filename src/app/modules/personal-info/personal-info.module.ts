@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { StartInfoComponent } from './start-info/start-info.component';
+import {NgsRevealModule} from "ngx-scrollreveal";
 
 
 
@@ -8,10 +9,11 @@ import { StartInfoComponent } from './start-info/start-info.component';
   declarations: [
     StartInfoComponent
   ],
-  imports: [
-    CommonModule
-  ]
-  ,exports: [
+    imports: [
+        CommonModule,
+        NgsRevealModule
+    ]
+    ,exports: [
       StartInfoComponent
   ]
 })

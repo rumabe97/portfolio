@@ -6,6 +6,7 @@ import {AppComponent} from './app.component';
 import {ComingSoonComponent} from './shared/components/coming-soon/coming-soon.component';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import {CoreModule} from "./core/core.module";
+import {NgsRevealModule} from "ngx-scrollreveal";
 
 @NgModule({
     declarations: [
@@ -16,6 +17,7 @@ import {CoreModule} from "./core/core.module";
         BrowserModule,
         AppRoutingModule,
         CoreModule,
+        NgsRevealModule,
         FontAwesomeModule
     ],
     providers: [],
