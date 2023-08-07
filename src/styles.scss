@@ -1,12 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+@import "./assets/vendors/bootstrap.scss";
 
-* {
-  font-family: 'Source Sans Pro', sans-serif;
-}
+@import "./assets/abstracts/mixins";
+@import "./assets/abstracts/variables";
+@import "./assets/abstracts/helpers";
 
-body, html {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
+@import "./assets/base/base";
+@import "./assets/base/typography";
+
+@import "./assets/components/buttons";
+
+@import "./assets/layout/footer";
+@import "./assets/layout/sections";
+
+@import "./assets/sections/about";
+@import "./assets/sections/contact";
+@import "./assets/sections/projects";
