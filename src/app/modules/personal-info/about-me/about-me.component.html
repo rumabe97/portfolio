@@ -1,0 +1,59 @@
+<section id="about" class="about">
+    <div class="container">
+        <h2 class="section-title load-hidden" [ngsReveal]="getConfig('section-title')">About me</h2>
+        <div class="row about-wrapper">
+            <div class="col-md-6 col-sm-12">
+                <div class="about-wrapper__image load-hidden">
+                    <img
+                            [ngsReveal]="getConfig('about-wrapper__image')"
+                            alt="Profile Image"
+                            class="img-fluid rounded shadow-lg about-img"
+                            height="auto"
+                            width="500px"
+                            src="assets/img/profile.jpeg"
+                    />
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <div class="about-wrapper__info load-hidden" [ngsReveal]="getConfig('about-wrapper__info')">
+                    <p class="about-wrapper__info-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi gravida eget tortor at ultricies.
+                        Nam finibus, purus ac convallis blandit, odio ipsum tristique urna, sit amet sodales dolor lacus
+                        in eros. Sed elementum tristique enim, in iaculis ex laoreet id. Duis scelerisque porta dui, sed
+                        pretium velit lobortis a. Sed lorem mi, pulvinar sit amet ultrices at, placerat in nisl. Aliquam
+                        et odio sodales, semper arcu eget, sollicitudin libero. Donec a metus a ligula maximus convallis
+                        non id lorem. Nullam at tortor ipsum.
+
+                        Proin justo nisi, bibendum non aliquet fermentum, auctor quis dolor. Ut blandit urna rutrum
+                        lacus molestie pretium. Cras volutpat tincidunt euismod. Integer mattis consequat ornare. Aenean
+                        lobortis mattis congue. Aenean auctor enim id mollis ultrices. Cras gravida nisi vel tincidunt
+                        laoreet. Sed imperdiet egestas vulputate. Praesent in turpis non eros tincidunt varius ac et
+                        sapien. Nam aliquam magna leo. Nunc ac tellus metus.
+                    </p>
+                    <p class="about-wrapper__info-text">
+                        Integer turpis lorem, tristique sed sagittis id, rhoncus eu erat. Mauris magna est, maximus sed
+                        elementum eu, volutpat id urna. Cras varius convallis leo eu efficitur. Pellentesque ac porta
+                        augue. Pellentesque facilisis, neque a ultricies vestibulum, sapien nisl sollicitudin eros, in
+                        venenatis libero quam a libero. Pellentesque dictum lorem a est molestie condimentum. Donec
+                        ornare, mauris tincidunt feugiat aliquam, neque orci congue est, id posuere sapien leo ac nisl.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere, nulla quis tincidunt
+                        porta, ante dui scelerisque neque, ut hendrerit elit tellus ut enim. Nullam at felis nec arcu
+                        cursus condimentum id id justo. Aliquam et sagittis ex. Orci varius natoque penatibus et magnis
+                        dis parturient montes, nascetur ridiculus mus. Morbi aliquet euismod mi, eget volutpat leo
+                        convallis nec.
+                    </p>
+                    <span class="d-flex mt-3">
+                <a
+                        rel="noreferrer"
+                        target="_blank"
+                        class="cta-btn cta-btn--resume"
+                        href="assets/resume.pdf"
+                >
+                  View Resume
+                </a>
+              </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

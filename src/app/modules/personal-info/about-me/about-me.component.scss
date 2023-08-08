@@ -1,24 +1,26 @@
-#about {
+@import "../../../../assets/abstracts/variables";
+@import "../../../../assets/abstracts/mixins";
+@import "../../../../assets/abstracts/helpers";
+
+.about {
   background-color: $primary-color;
   background-image: linear-gradient(
-    135deg,
-    $primary-color 0%,
-    $secondary-color 100%
+                  135deg,
+                  $primary-color 0%,
+                  $secondary-color 100%
   );
   color: $white-color;
   height: 100%;
-  border-top: 0px;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  border-top: 0;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   padding-bottom: 10%;
 
   @include respond(tab-land) {
     height: 100%;
-    -webkit-clip-path: none;
     clip-path: none;
   }
 
-  .about-wrapper {
+  &-wrapper {
     @include respond(phone) {
       padding-bottom: 5rem;
     }
@@ -75,5 +77,21 @@
         }
       }
     }
+  }
+  &-img {
+    --_g: 10% /45% 45% no-repeat linear-gradient(#000 0 0);
+    --m:
+            left   var(--_i,0%) top    var(--_g),
+            bottom var(--_i,0%) left   var(--_g),
+            top    var(--_i,0%) right  var(--_g),
+            right  var(--_i,0%) bottom var(--_g);
+    mask: var(--m);
+    filter: grayscale(1);
+    transition: .3s linear;
+    cursor: pointer;
+  }
+  &-img:hover, &-img:active {
+    --_i: 10%;
+    filter: grayscale(0);
   }
 }
