@@ -6,6 +6,7 @@ import {CommonModule} from "@angular/common";
 import {RouterModule} from "@angular/router";
 import {PersonalInfoModule} from "../modules/personal-info/personal-info.module";
 import {ProjectModule} from "../modules/project/project.module";
+import {ContactModule} from "../modules/contact/contact.module";
 
 
 
@@ -19,7 +20,8 @@ import {ProjectModule} from "../modules/project/project.module";
         CommonModule,
         PersonalInfoModule,
         RouterModule,
-        ProjectModule
+        ProjectModule,
+        ContactModule
     ]
 })
 export class CoreModule { }
