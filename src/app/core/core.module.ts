@@ -5,6 +5,7 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {CommonModule} from "@angular/common";
 import {RouterModule} from "@angular/router";
 import {PersonalInfoModule} from "../modules/personal-info/personal-info.module";
+import {ProjectModule} from "../modules/project/project.module";
 
 
 
@@ -12,12 +13,13 @@ import {PersonalInfoModule} from "../modules/personal-info/personal-info.module"
   declarations: [
     MainLayoutComponent
   ],
-  imports: [
-    BrowserModule,
-    BrowserAnimationsModule,
-    CommonModule,
-    PersonalInfoModule,
-    RouterModule
-  ]
+    imports: [
+        BrowserModule,
+        BrowserAnimationsModule,
+        CommonModule,
+        PersonalInfoModule,
+        RouterModule,
+        ProjectModule
+    ]
 })
 export class CoreModule { }

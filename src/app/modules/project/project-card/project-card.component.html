@@ -1,0 +1,45 @@
+<div class="row {{isEven % 2 === 0 ? 'row-even' : ''}}">
+    <div class="col-lg-4 col-sm-12">
+        <div class="project-wrapper__text load-hidden" [ngsReveal]="getConfig('project-wrapper__text')">
+            <h3 class="project-wrapper__text-title">{{project.name}}</h3>
+            <div>
+                <p class="mb-4">{{project.description}}</p>
+            </div>
+            <a
+                    rel="noreferrer"
+                    target="_blank"
+                    class="cta-btn cta-btn--hero"
+                    (click)="onNavigate(project.urlLive)"
+            >
+                See Live
+            </a>
+            <a
+                    rel="noreferrer"
+                    target="_blank"
+                    class="cta-btn text-color-main"
+                    (click)="onNavigate(project.urlGit)"
+            >
+                Source Code
+            </a>
+        </div>
+    </div>
+    <div class="col-lg-8 col-sm-12">
+        <div class="project-wrapper__image load-hidden" [ngsReveal]="getConfig('project-wrapper__image')">
+            <a rel="noreferrer" (click)="onNavigate(project.urlLive)" target="_blank">
+                <div
+                        data-tilt
+                        data-tilt-max="4"
+                        data-tilt-glare="true"
+                        data-tilt-max-glare="0.5"
+                        class="thumbnail rounded js-tilt"
+                >
+                    <img
+                            alt="Project Image"
+                            class="img-fluid"
+                            src="assets/img/project.jpg"
+                    />
+                </div>
+            </a>
+        </div>
+    </div>
+</div>

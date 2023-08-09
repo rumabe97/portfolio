@@ -1,0 +1,9 @@
+<section id="projects" class="projects">
+    <div class="container">
+        <div class="project-wrapper">
+            <h2 class="section-title dark-blue-text" [ngsReveal]="getConfig('section-title')">Projects</h2>
+
+            <app-project-card *ngFor="let project of projectList; let i = index" [project]="project" [isEven]="i"></app-project-card>
+        </div>
+    </div>
+</section>

@@ -1,5 +1,4 @@
 import {Component, OnInit} from '@angular/core';
-import {initTiltAnimation} from "./shared/utils/InintTiltAnimation";
 
 @Component({
   selector: 'app-root',
@@ -8,6 +7,5 @@ import {initTiltAnimation} from "./shared/utils/InintTiltAnimation";
 })
 export class AppComponent implements  OnInit{
   ngOnInit(): void {
-    initTiltAnimation();
   }
 }
