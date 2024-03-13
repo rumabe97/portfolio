@@ -2,10 +2,10 @@ import {IProject} from "../IProject";
 
 export const projects: IProject[] = [
     {
-        name: 'Project 1',
+        name: ' Monthly Calendar',
         description: 'A digital calendar enables effortless addition and editing of events. By setting event times, an alarm can be activated to receive timely notifications. This tool organizes your schedule, ensuring you never miss an important appointment by reminding you in advance of the exact timing of each scheduled event.',
-        urlLive: 'www.google.com',
-        urlGit: 'www.github.com',
+        urlLive: 'rumabe97.github.io/MonthlyCalendar/',
+        urlGit: 'github.com/rumabe97/MonthlyCalendar',
         image: ''
     },
     {
