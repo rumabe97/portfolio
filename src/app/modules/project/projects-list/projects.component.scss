@@ -4,8 +4,8 @@
 
 
 .projects {
-  background-color: $white-color;
-  color: $dark-blue-text;
+  background-color: var(--back-color);
+  color: var(--secondary-text-color);
   margin-top: -10rem;
   padding-top: 15rem;
 

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+@import "../abstracts/variables";
 
 h1 {
   font-weight: 700;
@@ -23,8 +24,7 @@ a:hover {
 }
 
 .section-title {
-  margin: 0px;
-  margin-bottom: 4.5rem;
+  margin: 0 0 4.5rem;
   font-size: $big-font-size;
   font-weight: bold;
   text-transform: uppercase;
@@ -35,7 +35,7 @@ a:hover {
 }
 
 .dark-blue-text {
-  color: $dark-blue-text !important;
+  color: var(--secondary-text-color) !important;
 }
 
 .text-color-main {
@@ -44,7 +44,7 @@ a:hover {
   // Responsive text purple style
   @include respond(phone) {
     background-image: none;
-    -webkit-text-fill-color: $secondary-color;
+    -webkit-text-fill-color: var(--primary-color);
   }
 
   &:hover {

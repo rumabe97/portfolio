@@ -3,13 +3,13 @@
 @import "../../../../assets/abstracts/helpers";
 
 .about {
-  background-color: $primary-color;
+  background-color:var(--primary-color);
   background-image: linear-gradient(
                   135deg,
-                  $primary-color 0%,
-                  $secondary-color 100%
+                  var(--primary-color)  0%,
+                  var(--secondary-color)  100%
   );
-  color: $white-color;
+  color: var(--text-color);
   height: 100%;
   border-top: 0;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
@@ -62,7 +62,7 @@
         }
 
         &--important {
-          background: darken($secondary-color, 1%);
+          background: var(--secondary-color-dark);
           display: inline-block;
           font-style: italic;
           padding: 0 0.3rem;

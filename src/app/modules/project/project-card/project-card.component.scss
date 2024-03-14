@@ -35,7 +35,7 @@
     }
 
     & p > a {
-      color: $secondary-color;
+      color: var(--secondary-color);
     }
   }
 

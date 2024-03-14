@@ -1,13 +1,20 @@
-// COLORS
+// COLORS light
 $primary-color: #02aab0;
 $secondary-color: #00cdac;
+$back-color: #fff;
+$text-color: #fff;
+$secondary-text-color: #272341;
 
-$white-color: #fff;
+// COLORS dark
+$primary-color-dark: darken($primary-color, 32%);
+$secondary-color-dark: darken($secondary-color, 32%);
+$back-color-dark: #666;
+$secondary-text-color-dark: #B0C4DE;
 
 $dark-grey: #333333;
 $light-grey: #d2d2d2;
 
-$dark-blue-text: #272341; // For Headings
+
 
 // FONT SIZE
 $default-font-size: 1.6rem;
