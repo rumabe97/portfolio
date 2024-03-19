@@ -52,7 +52,7 @@
   -webkit-text-fill-color: var(--secondary-color); // fallback
   @supports (-webkit-background-clip: text) or (background-clip: text) {
     background-image: linear-gradient(
-      135deg,
+      175deg,
       var(--primary-color) 0%,
       var(--secondary-color) 100%
     );
@@ -86,8 +86,8 @@
   --secondary-color: #{$secondary-color-dark};
   --secondary-color-dark:darken($secondary-color-dark, 1%);
   --back-color: #{$back-color-dark};
-  --text-color: #{$text-color};
-  --text-color-dark : darken($text-color, 50%);
+  --text-color: #{$text-color-dark};
+  --text-color-dark : darken($text-color-dark, 50%);
   --secondary-text-color: #{$secondary-text-color-dark};
 }
 

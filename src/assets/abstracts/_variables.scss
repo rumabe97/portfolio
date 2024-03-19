@@ -1,19 +1,75 @@
 // COLORS light
-$primary-color: #02aab0;
-$secondary-color: #00cdac;
-$back-color: #fff;
+//$primary-color: #FFDAB9;
+//$secondary-color: #98FB98;
+//$back-color: #F5F5DC;
+//$text-color: #333333;
+//$secondary-text-color: #666666;
+
+//$primary-color: #FFB6C1;
+//$secondary-color: #ADD8E6;
+//$back-color: #F0F0F0;
+//$text-color: #666666;
+//$secondary-text-color: #999999;
+
+//$primary-color: #FFB6C1;
+//$secondary-color: #87CEEB;
+//$back-color: #F0F8FF;
+//$text-color: #333333;
+//$secondary-text-color: #666666;
+
+//$primary-color: #ADD8E6;
+//$secondary-color: #FFD700;
+//$back-color: #F0FFFF;
+//$text-color: #333333;
+//$secondary-text-color: #666666;
+
+//$primary-color: #90EE90;
+//$secondary-color: #FF6347;
+//$back-color: #FAFAD2;
+//$text-color: #4A4A4A;
+//$secondary-text-color: #999999;
+
+$primary-color: #606c38;
+$secondary-color: #283618;
+$back-color: #fefae0;
 $text-color: #fff;
-$secondary-text-color: #272341;
+$secondary-text-color: #666666;
+
+//$primary-color: #264653;
+//$secondary-color: #2a9d8f;
+//$back-color: #e9c46a;
+//$text-color: #fff;
+//$secondary-text-color: #666666;
+
 
 // COLORS dark
-$primary-color-dark: darken($primary-color, 32%);
-$secondary-color-dark: darken($secondary-color, 32%);
-$back-color-dark: #666;
-$secondary-text-color-dark: #B0C4DE;
+//$primary-color-dark: #6B364F;
+//$secondary-color-dark: #3D596F;
+//$back-color-dark: #1C1C1C;
+//$text-color-dark: #CCCCCC;
+//$secondary-text-color-dark: #4D4D4D;
+
+//$primary-color-dark: #8B4513;
+//$secondary-color-dark: #2E8B57;
+//$back-color-dark: #1C1C1C;
+//$text-color-dark: #CCCCCC;
+//$secondary-text-color-dark: #4D4D4D;
+
+//$primary-color-dark: #FF6B81;
+//$secondary-color-dark: #5F9EA0;
+//$back-color-dark: #1C1C1C;
+//$text-color-dark: #CCCCCC;
+//$secondary-text-color-dark: #4D4D4D;
+
+$primary-color-dark: #343434;
+$secondary-color-dark: #232323;
+$back-color-dark: #000000;
+$text-color-dark: #696969;
+$secondary-text-color-dark: #7a7a7a;
+
 
 $dark-grey: #333333;
 $light-grey: #d2d2d2;
-
 
 
 // FONT SIZE
