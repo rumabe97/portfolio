@@ -1,0 +1,177 @@
+.container {
+  position: fixed;
+  top: 2vh;
+  right: 2vw;
+  z-index: 9999;
+}
+.switch {
+  border-radius: 9999px;
+  border: 1px solid #00000000;
+  padding: 5px;
+  background-color: #409fe4;
+  background-clip: padding-box;
+  box-shadow: -1px 5px 4px inset rgba(0, 0, 0, 0.44);
+  height: 42px;
+  box-sizing: content-box;
+  z-index: 1;
+  border: 2px solid #00000000;
+  transition: 0.1s ease;
+  cursor: pointer;
+  transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+
+  &::before {
+    content: "";
+    position: absolute;
+    border-radius: inherit;
+    top: -1px;
+    left: -1px;
+    bottom: -1px;
+    right: -1px;
+    z-index: -1;
+    background: linear-gradient(130deg, #a1b4d1, #fefefd);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    border-radius: inherit;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    transition: 1s ease 0.1s;
+    transition: 1s cubic-bezier(0.65, -0.05, 0.29, 1.2);
+    background-color: inherit;
+    background-image: url("../../../../assets/img/Clouds.png");
+    background-size: 110%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.shadow-overlay {
+  position: absolute;
+  inset: 0;
+  box-shadow: -1px 5px 4px inset rgba(0, 0, 0, 0.44);
+  border-radius: inherit;
+  z-index: 10;
+}
+
+.sun-moon::before {
+  position: absolute;
+  content: "";
+  border-radius: inherit;
+  inset: 1px;
+  background-color: #fed32f;;
+}
+
+.insetcover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: inherit;
+  overflow: hidden;
+  border-radius: inherit;
+}
+
+.sun-moon-shadow {
+  font-size: 42px;
+  width: 1em;
+  height: 1em;
+  position: absolute;
+  border-radius: 50%;
+  right: calc(100% - 5px - 1em);
+  transition: 0.6s ease;
+  transition: 0.6s cubic-bezier(0.65, -0.05, 0.29, 1.2);
+  z-index: 1;
+  box-shadow: 0 8px 11px rgba(0, 0, 0, 0.44);
+}
+
+.sun-moon {
+  font-size: 42px;
+  width: 1em;
+  height: 1em;
+  position: absolute;
+  background-image: linear-gradient(130deg, #f2fa8f, #eb9a25);
+  border-radius: 50%;
+  right: calc(100% - 5px - 1em);
+  transition: 0.6s ease;
+  transition: 0.6s cubic-bezier(0.65, -0.05, 0.29, 1.2);
+  background-clip: padding-box;
+  z-index: 5;
+  box-shadow: 0 0 0 9px rgba(255, 255, 255, 0.1),
+  0 0 0 18px rgba(255, 255, 255, 0.1), 0 0 0 27px rgba(255, 255, 255, 0.1);
+
+  &.moon {
+    background-image: linear-gradient(130deg, #fafbfe, #9aa4b1);
+    opacity: 0;
+
+    &::before {
+      position: absolute;
+      content: "";
+      border-radius: inherit;
+      inset: 1px;
+      background-color: #d2d9e1;
+      background-image: url("../../../../assets/img/MoonCrater.png");
+      background-size: 60%;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+}
+
+#dark-mode {
+  display: none;
+}
+
+.stars {
+  background-image: url("../../../../assets/img/Stars.png");
+  position: absolute;
+  width: 45%;
+  bottom: 5px;
+  height: 80%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 0.4s ease 0s;
+  transition: 0.6s cubic-bezier(0.65, -0.05, 0.29, 1.2);
+  transform: translateY(-125%) translateZ(0);
+}
+
+#dark-mode:checked + .insetcover .sun-moon,
+#dark-mode:checked ~ .sun-moon-shadow {
+  right: 5px;
+}
+
+#dark-mode:checked + .insetcover .sun {
+  opacity: 0;
+}
+
+#dark-mode:not(:checked) + .insetcover .moon {
+  transform: rotate(-180deg);
+}
+
+#dark-mode:checked + .insetcover .moon {
+  opacity: 1;
+}
+
+#dark-mode:checked + .insetcover .stars {
+  transform: translateY(0%) translateZ(0);
+  transition: 1s ease 0.1s;
+  transition: 1s cubic-bezier(0.65, -0.05, 0.29, 1.2);
+}
+
+label[data-dark-mode="true"] .switch {
+  background-color: #212737;
+}
+
+label[data-dark-mode="true"] .switch::after {
+  background-position: 0px 100px;
+}
+
+label[for="dark-mode"] {
+  width: clamp(50px, 100%, 100px);
+}

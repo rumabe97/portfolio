@@ -8,6 +8,14 @@ export const defaultProps = {
 
 export const targetElements = [
     {
+        element: "switch",
+        animation: {
+            delay: 300,
+            distance: "0px",
+            origin: "bottom",
+        },
+    },
+    {
         element: "section-title",
         animation: {
             delay: 300,

@@ -21,6 +21,9 @@ body {
 .dark {
   @include darkStyle();
 }
+body, * {
+  transition: background-color 1s ease, color 1s ease, border-color 1s ease;
+}
 /* Scrollbar */
 ::-webkit-scrollbar {
   width: 10px;

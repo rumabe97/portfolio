@@ -7,11 +7,13 @@ import {ComingSoonComponent} from './shared/components/coming-soon/coming-soon.c
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import {CoreModule} from "./core/core.module";
 import {NgsRevealModule} from "ngx-scrollreveal";
+import { DarkModeToggleComponent } from './shared/components/dark-mode-toggle/dark-mode-toggle.component';
 
 @NgModule({
     declarations: [
         AppComponent,
-        ComingSoonComponent
+        ComingSoonComponent,
+        DarkModeToggleComponent
     ],
     imports: [
         BrowserModule,
