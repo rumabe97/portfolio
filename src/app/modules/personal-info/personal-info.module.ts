@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {CommonModule, NgOptimizedImage} from '@angular/common';
 import { StartInfoComponent } from './start-info/start-info.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import {NgxScrollrevealModule} from "../../ngx-scrollreveal/ngx-scrollreveal.module";
@@ -13,7 +13,8 @@ import {NgxScrollrevealModule} from "../../ngx-scrollreveal/ngx-scrollreveal.mod
   ],
     imports: [
         CommonModule,
-        NgxScrollrevealModule
+        NgxScrollrevealModule,
+        NgOptimizedImage
     ]
     , exports: [
         StartInfoComponent,
