@@ -1,8 +1,8 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {NgsRevealConfig} from "ngx-scrollreveal/services/ngs-reveal-config";
 import {getScrollConfig} from "../../../shared/utils/ScrollRevealConfig";
 import {initTiltAnimation} from "../../../shared/utils/InintTiltAnimation";
 import {IProject} from "../IProject";
+import {NgsRevealConfig} from "../../../ngx-scrollreveal/services";
 
 @Component({
     selector: 'app-project-card',

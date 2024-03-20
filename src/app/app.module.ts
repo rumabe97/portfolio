@@ -6,8 +6,8 @@ import {AppComponent} from './app.component';
 import {ComingSoonComponent} from './shared/components/coming-soon/coming-soon.component';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import {CoreModule} from "./core/core.module";
-import {NgsRevealModule} from "ngx-scrollreveal";
 import { DarkModeToggleComponent } from './shared/components/dark-mode-toggle/dark-mode-toggle.component';
+import {NgxScrollrevealModule} from "./ngx-scrollreveal/ngx-scrollreveal.module";
 
 @NgModule({
     declarations: [
@@ -19,7 +19,7 @@ import { DarkModeToggleComponent } from './shared/components/dark-mode-toggle/da
         BrowserModule,
         AppRoutingModule,
         CoreModule,
-        NgsRevealModule,
+        NgxScrollrevealModule,
         FontAwesomeModule
     ],
     providers: [],

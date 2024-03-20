@@ -1,5 +1,5 @@
-import {NgsRevealConfig} from "ngx-scrollreveal/services/ngs-reveal-config";
 import {defaultProps, targetElements} from "../data/ScrollRevealData";
+import {NgsRevealConfig} from "../../ngx-scrollreveal/services";
 
 export function getScrollConfig(element: string): NgsRevealConfig {
     let config:NgsRevealConfig = {};

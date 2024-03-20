@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ContatInformationComponent } from './contat-information/contat-information.component';
-import {NgsRevealModule} from "ngx-scrollreveal";
+import {NgxScrollrevealModule} from "../../ngx-scrollreveal/ngx-scrollreveal.module";
 
 
 
@@ -14,7 +14,7 @@ import {NgsRevealModule} from "ngx-scrollreveal";
     ],
     imports: [
         CommonModule,
-        NgsRevealModule
+        NgxScrollrevealModule
     ]
 })
 export class ContactModule { }

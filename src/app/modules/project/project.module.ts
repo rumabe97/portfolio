@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ProjectsComponent } from './projects-list/projects.component';
 import { ProjectCardComponent } from './project-card/project-card.component';
-import {NgsRevealModule} from "ngx-scrollreveal";
+import {NgxScrollrevealModule} from "../../ngx-scrollreveal/ngx-scrollreveal.module";
 
 
 
@@ -16,7 +16,7 @@ import {NgsRevealModule} from "ngx-scrollreveal";
   ],
   imports: [
     CommonModule,
-    NgsRevealModule
+    NgxScrollrevealModule
   ]
 })
 export class ProjectModule { }

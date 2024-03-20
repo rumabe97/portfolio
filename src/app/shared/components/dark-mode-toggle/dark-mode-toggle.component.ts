@@ -1,6 +1,6 @@
 import {Component, ElementRef, OnInit, ViewChild, Renderer2} from '@angular/core';
-import {NgsRevealConfig} from "ngx-scrollreveal/services/ngs-reveal-config";
 import {getScrollConfig} from "../../utils/ScrollRevealConfig";
+import {NgsRevealConfig} from "../../../ngx-scrollreveal/services";
 
 @Component({
   selector: 'app-dark-mode-toggle',

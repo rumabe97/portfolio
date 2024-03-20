@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {NgsRevealConfig} from "ngx-scrollreveal/services/ngs-reveal-config";
 import {getScrollConfig} from "../../../shared/utils/ScrollRevealConfig";
 import {projects} from "./mockValues";
+import {NgsRevealConfig} from "../../../ngx-scrollreveal/services";
 
 @Component({
   selector: 'app-projects-list',
