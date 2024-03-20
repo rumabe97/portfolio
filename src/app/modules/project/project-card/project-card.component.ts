@@ -1,8 +1,7 @@
-import {Component, Input, OnInit} from '@angular/core';
-import {getScrollConfig} from "../../../shared/utils/ScrollRevealConfig";
-import {initTiltAnimation} from "../../../shared/utils/InintTiltAnimation";
+import {Component, Input, OnInit, Renderer2} from '@angular/core';
 import {IProject} from "../IProject";
 import {NgsRevealConfig} from "../../../ngx-scrollreveal/services";
+import {ScrollConfigService} from "../../../core/services/scroll/scroll-config.service";
 
 @Component({
     selector: 'app-project-card',
@@ -14,15 +13,14 @@ export class ProjectCardComponent implements OnInit {
     @Input() project: IProject;
     @Input() isEven: number = 0;
 
-    constructor() {
+    constructor(private renderer: Renderer2, private scrollService: ScrollConfigService) {
     }
 
     ngOnInit(): void {
-        initTiltAnimation();
     }
 
     getConfig(element: string): NgsRevealConfig {
-        return getScrollConfig(element);
+        return this.scrollService.getScrollConfig(element);
     }
 
     onNavigate(url: string) {

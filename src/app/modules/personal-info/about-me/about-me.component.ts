@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {getScrollConfig} from "../../../shared/utils/ScrollRevealConfig";
 import {NgsRevealConfig} from "../../../ngx-scrollreveal/services";
+import {ScrollConfigService} from "../../../core/services/scroll/scroll-config.service";
 
 @Component({
   selector: 'app-about-me',
@@ -9,13 +9,13 @@ import {NgsRevealConfig} from "../../../ngx-scrollreveal/services";
 })
 export class AboutMeComponent implements OnInit {
 
-  constructor() { }
+  constructor(private scrollService: ScrollConfigService) { }
 
   ngOnInit(): void {
   }
 
   getConfig(element: string): NgsRevealConfig {
-    return getScrollConfig(element);
+    return this.scrollService.getScrollConfig(element);
   }
 
 }

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {getScrollConfig} from "../../../shared/utils/ScrollRevealConfig";
 import {projects} from "./mockValues";
 import {NgsRevealConfig} from "../../../ngx-scrollreveal/services";
+import {ScrollConfigService} from "../../../core/services/scroll/scroll-config.service";
 
 @Component({
   selector: 'app-projects-list',
@@ -10,13 +10,13 @@ import {NgsRevealConfig} from "../../../ngx-scrollreveal/services";
 })
 export class ProjectsComponent implements OnInit {
   projectList = projects;
-  constructor() { }
+  constructor(private scrollService: ScrollConfigService) { }
 
   ngOnInit(): void {
   }
 
   getConfig(element: string): NgsRevealConfig {
-    return getScrollConfig(element);
+    return this.scrollService.getScrollConfig(element);
   }
 
 }

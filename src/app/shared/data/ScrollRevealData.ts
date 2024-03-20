@@ -1,3 +1,5 @@
+import {getWindow} from "ssr-window";
+
 export const defaultProps = {
     easing: "cubic-bezier(0.5, 0, 0, 1)",
     distance: "30px",
@@ -27,14 +29,14 @@ export const targetElements = [
         element: "start-title",
         animation: {
             delay: 500,
-            origin: window.innerWidth > 768 ? "left" : "bottom",
+            origin: getWindow().innerWidth > 768 ? "left" : "bottom",
         },
     },
     {
         element: "start-cta",
         animation: {
             delay: 1000,
-            origin: window.innerWidth > 768 ? "left" : "bottom",
+            origin: getWindow().innerWidth > 768 ? "left" : "bottom",
         },
     },
     {
@@ -48,21 +50,21 @@ export const targetElements = [
         element: "about-wrapper__info",
         animation: {
             delay: 1000,
-            origin: window.innerWidth > 768 ? "left" : "bottom",
+            origin: getWindow().innerWidth > 768 ? "left" : "bottom",
         },
     },
     {
         element: "project-wrapper__text",
         animation: {
             delay: 500,
-            origin: window.innerWidth > 768 ? "left" : "bottom",
+            origin: "left",
         },
     },
     {
         element: "project-wrapper__image",
         animation: {
             delay: 1000,
-            origin: window.innerWidth > 768 ? "right" : "bottom",
+            origin: getWindow().innerWidth > 768 ? "right" : "bottom",
         },
     },
     {

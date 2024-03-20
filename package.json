@@ -37,8 +37,8 @@
     "path": "^0.12.7",
     "rxjs": "~7.8.1",
     "scrollreveal": "^4.0.9",
+    "ssr-window": "^4.0.2",
     "tslib": "^2.6.2",
-    "vanilla-tilt": "^1.8.1",
     "zone.js": "~0.14.4"
   },
   "devDependencies": {

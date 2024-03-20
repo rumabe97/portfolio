@@ -1,6 +1,6 @@
 import {Component, ElementRef, OnInit, ViewChild, Renderer2} from '@angular/core';
-import {getScrollConfig} from "../../utils/ScrollRevealConfig";
 import {NgsRevealConfig} from "../../../ngx-scrollreveal/services";
+import {ScrollConfigService} from "../../../core/services/scroll/scroll-config.service";
 
 @Component({
   selector: 'app-dark-mode-toggle',
@@ -10,13 +10,13 @@ import {NgsRevealConfig} from "../../../ngx-scrollreveal/services";
 export class DarkModeToggleComponent implements OnInit {
   @ViewChild('darkModeToggle') darkModeToggle!: ElementRef<HTMLInputElement>;
   @ViewChild('darkInput') darkModeToggleInput!: ElementRef<HTMLInputElement>;
-  constructor(private _renderer: Renderer2) { }
+  constructor(private _renderer: Renderer2, private scrollService: ScrollConfigService) { }
 
   ngOnInit(): void {
   }
 
   getConfig(element: string): NgsRevealConfig {
-    return getScrollConfig(element);
+    return this.scrollService.getScrollConfig(element);
   }
 
   changeMode(){
