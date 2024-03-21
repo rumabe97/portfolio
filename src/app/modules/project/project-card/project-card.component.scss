@@ -1,13 +1,13 @@
 @import "../../../../assets/abstracts/variables";
 @import "../../../../assets/abstracts/mixins";
-@import "../../../../assets/abstracts/helpers";
 
 .row {
   margin-bottom: 8rem;
 
-  &-even{
+  &-even {
     flex-direction: row-reverse;
   }
+
   @include respond(phone) {
     margin-bottom: 4rem;
   }
@@ -48,20 +48,6 @@
       width: 100%;
       margin: 0;
     }
-
-    & .thumbnail {
-      border: none;
-      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
-      transition: 0.5s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
-      0.5s box-shadow,
-      0.5s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
-
-      @include respond(phone) {
-        border: 1px solid $light-grey;
-        box-shadow: none;
-        margin-bottom: 3.2rem;
-      }
-    }
   }
 }
 
@@ -75,6 +61,7 @@ figure {
 .project-wrapper__container figure {
   position: relative;
 }
+
 .project-wrapper__container figure::before {
   position: absolute;
   top: 0;
@@ -84,21 +71,24 @@ figure {
   content: '';
   width: 50%;
   height: 100%;
-  background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
   -webkit-transform: skewX(-25deg);
   transform: skewX(-25deg);
 }
+
 .project-wrapper__container figure:hover::before {
   -webkit-animation: shine .75s;
   animation: shine .75s;
 }
+
 @-webkit-keyframes shine {
-  100% {
+  to {
     left: 125%;
   }
 }
+
 @keyframes shine {
-  100% {
+  to {
     left: 125%;
   }
 }

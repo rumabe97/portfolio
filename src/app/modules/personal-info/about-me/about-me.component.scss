@@ -1,6 +1,5 @@
 @import "../../../../assets/abstracts/variables";
 @import "../../../../assets/abstracts/mixins";
-@import "../../../../assets/abstracts/helpers";
 
 .about {
   background-color:var(--primary-color);
@@ -59,23 +58,6 @@
         }
         @include respond(tab-port-sm) {
           text-align: center;
-        }
-
-        &--important {
-          background: var(--secondary-color-dark);
-          display: inline-block;
-          font-style: italic;
-          padding: 0 0.3rem;
-          margin: 0.3rem 0;
-          line-height: 1.6;
-
-          @include respond(phone) {
-            display: inline;
-            margin: 0;
-            padding: 0;
-            background: transparent;
-            font-style: normal;
-          }
         }
       }
     }
