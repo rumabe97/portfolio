@@ -1,15 +1,17 @@
 <section id="contact" class="contact">
     <div class="container">
-        <a rel="noreferrer" href="#top" class="back-to-top" [ngsReveal]="getConfig('section-title')">
-            <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
-        </a>
+        <div [ngsReveal]="getConfig('section-title')" class="back">
+            <a rel="noreferrer" href="#top" aria-label="Back to top">
+                <fa-icon class="fa-2x" [icon]="faAngleUp"></fa-icon>
+            </a>
+        </div>
         <h2 class="section-title" [ngsReveal]="getConfig('section-title')">Contact</h2>
         <div class="contact-wrapper load-hidden" [ngsReveal]="getConfig('contact-wrapper')">
             <p class="contact-wrapper__text">Feel free to reach out, fork my code or check my linkedin.</p>
             <div class="social-links">
-                <a href="https://www.linkedin.com/in/ruben-martinez-bermejo/" target="_blank"><fa-icon [icon]="faLinkedin"></fa-icon></a>
-                <a href="https://github.com/rumabe97" target="_blank"><fa-icon [icon]="faGithub"></fa-icon></a>
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=rumabe97@gmail.com" target="_blank"><fa-icon [icon]="faGMail"></fa-icon></a>
+                <a href="https://www.linkedin.com/in/ruben-martinez-bermejo/" target="_blank" aria-label="Visit my Linkedin"><fa-icon [icon]="faLinkedin"></fa-icon></a>
+                <a href="https://github.com/rumabe97" target="_blank" aria-label="Visit my Gmail"><fa-icon [icon]="faGithub"></fa-icon></a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=rumabe97@gmail.com" target="_blank" aria-label="Send me an Email"><fa-icon [icon]="faGMail"></fa-icon></a>
             </div>
         </div>
     </div>
