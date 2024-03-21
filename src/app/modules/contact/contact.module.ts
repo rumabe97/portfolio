@@ -1,20 +1,22 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ContatInformationComponent } from './contat-information/contat-information.component';
 import {NgxScrollrevealModule} from "../../ngx-scrollreveal/ngx-scrollreveal.module";
+import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
+import {ContactInformationComponent} from "./contact-information/contact-information.component";
 
 
 
 @NgModule({
     declarations: [
-        ContatInformationComponent
+        ContactInformationComponent
     ],
     exports: [
-        ContatInformationComponent
+        ContactInformationComponent
     ],
     imports: [
         CommonModule,
-        NgxScrollrevealModule
+        NgxScrollrevealModule,
+        FontAwesomeModule
     ]
 })
 export class ContactModule { }
