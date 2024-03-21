@@ -24,6 +24,6 @@ export class ProjectCardComponent implements OnInit {
     }
 
     onNavigate(url: string) {
-        window.open(`https://${url}`, "_blank");
+        return `https://${url}`;
     }
 }

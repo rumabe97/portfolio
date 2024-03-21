@@ -9,7 +9,7 @@
                     rel="noreferrer"
                     target="_blank"
                     class="cta-btn cta-btn--hero"
-                    (click)="onNavigate(project.urlLive)"
+                    href="{{onNavigate(project.urlLive)}}"
             >
                 See Live
             </a>
@@ -17,7 +17,7 @@
                     rel="noreferrer"
                     target="_blank"
                     class="cta-btn text-color-main"
-                    (click)="onNavigate(project.urlGit)"
+                    href="{{onNavigate(project.urlGit)}}"
             >
                 Source Code
             </a>
@@ -25,7 +25,7 @@
     </div>
     <div class="col-lg-8 col-sm-12">
         <div class="project-wrapper__image load-hidden" [ngsReveal]="getConfig('project-wrapper__image')">
-            <a rel="noreferrer" (click)="onNavigate(project.urlLive)" target="_blank">
+            <a rel="noreferrer" href="{{onNavigate(project.urlLive)}}" target="_blank">
                 <div class="project-wrapper__container">
                     <div>
                         <figure>
