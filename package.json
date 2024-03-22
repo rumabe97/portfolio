@@ -13,7 +13,7 @@
     "postinstall": "ng build --configuration production",
     "dev:ssr": "ng run portfolio:serve-ssr",
     "serve:ssr": "node dist/portfolio/server/main.js",
-    "build:ssr": "ng build --configuration production && ng run portfolio:server",
+    "build:ssr": "ng build --configuration production --optimization && ng run portfolio:server",
     "prerender": "ng run portfolio:prerender"
   },
   "private": true,

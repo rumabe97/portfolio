@@ -20,7 +20,8 @@
     "rewrites": [
       {
         "source": "**",
-        "function": "ssr"
+        "function": "ssr",
+        "destination": "/index.html"
       }
     ]
   }
