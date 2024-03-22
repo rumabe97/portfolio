@@ -43,7 +43,7 @@
     transition: 1s ease 0.1s;
     transition: 1s cubic-bezier(0.65, -0.05, 0.29, 1.2);
     background-color: inherit;
-    background-image: url("../../../../assets/img/Clouds.png");
+    background-image: url("../../../../assets/img/Clouds.webp");
     background-size: 110%;
     background-repeat: no-repeat;
     background-position: center;
@@ -115,7 +115,7 @@
       border-radius: inherit;
       inset: 1px;
       background-color: #d2d9e1;
-      background-image: url("../../../../assets/img/MoonCrater.png");
+      background-image: url("../../../../assets/img/MoonCrater.webp");
       background-size: 60%;
       background-repeat: no-repeat;
       background-position: center;
@@ -128,7 +128,7 @@
 }
 
 .stars {
-  background-image: url("../../../../assets/img/Stars.png");
+  background-image: url("../../../../assets/img/Stars.webp");
   position: absolute;
   width: 45%;
   bottom: 5px;
