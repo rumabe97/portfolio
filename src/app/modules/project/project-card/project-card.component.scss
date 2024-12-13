@@ -81,6 +81,14 @@ figure {
   animation: shine .75s;
 }
 
+.project-info {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.project-image {
+  height: 50vh !important;
+}
 @-webkit-keyframes shine {
   to {
     left: 125%;
