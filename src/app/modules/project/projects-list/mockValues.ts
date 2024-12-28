@@ -13,14 +13,14 @@ export const projects: IProject[] = [
         description: 'Glucemy is a front-end application designed to help users monitor their blood glucose index and access glycemic information about various foods. It offers an intuitive interface to track and manage dietary choices. Developed as my final degree project some time ago, the application may have limitations with Gmail and Outlook login functionalities due to outdated integrations.',
         urlLive: 'glucemy-front.vercel.app/app',
         urlGit: 'github.com/rumabe97/Glucemy-front',
-        image: ''
+        image: 'assets/img/glucemyfront.webp'
     },
     {
         name: 'Glucemy-api',
         description: 'The back-end of Glucemy, built using Django, provides secure data management, processes food-related information, and integrates APIs to support accurate glycemic tracking. It focuses on delivering reliable functionality, showcasing my ability to develop robust server-side solutions for health-focused applications.',
         urlLive: 'glucemy-back.vercel.app/api/schema/swagger-ui/',
         urlGit: 'github.com/rumabe97/glucemy-back',
-        image: ''
+        image: 'assets/img/glucemyBack.webp'
     },
     {
         name: 'BookTracker',
