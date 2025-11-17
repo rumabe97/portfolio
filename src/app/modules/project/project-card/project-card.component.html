@@ -6,6 +6,7 @@
                 <p class="mb-4">{{ project.description }}</p>
             </div>
             <a
+                    *ngIf="project.urlLive"
                     rel="noreferrer"
                     target="_blank"
                     class="cta-btn cta-btn--hero"
